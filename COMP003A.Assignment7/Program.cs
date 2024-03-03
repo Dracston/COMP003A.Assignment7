@@ -25,7 +25,7 @@ namespace COMP003A.Assignment7
             Console.WriteLine($"There are {finalCount} of the letter {char.ToUpper(charInput)} in this word");// I finally learned how to use a return value)
 
             SectionSeparator("Array - IsPalindrome Section");
-            Console.WriteLine("Please enter a word to check is it is a palindrome! ");
+            Console.WriteLine("Please enter a word to check if it is a palindrome! ");
             string palindrome = Console.ReadLine();
            bool palindromeCheck= IsPalindrome(palindrome);
             Console.WriteLine($"Is the word {palindrome} a palindrome: {palindromeCheck}");
@@ -98,12 +98,17 @@ namespace COMP003A.Assignment7
             {
                 Console.WriteLine(word);
             }
-        }
+        } /// <summary>
+        /// Takes the finished list and writes it as is.
+        /// </summary>
+        /// <param name="list"></param>
         static void TraverseListReverse(List<string> list)
         {
             for (int i = list.Count - 1; i >= 0; i--)
             { Console.WriteLine(list[i]); }
-        }
+        }///<summary>
+        /// For loop that begins with the last listed item and works its way back to the begining
+        ///</summary>
        
     }
 }
